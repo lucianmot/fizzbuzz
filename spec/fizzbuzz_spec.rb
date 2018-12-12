@@ -1,6 +1,11 @@
 require 'fizzbuzz'
 
 describe 'fizzbuzz' do
+  it 'if not multiple of 3 or 5 return number' do
+  	expect(fizzbuzz(1)).to eq 1
+  	expect(fizzbuzz(2)).to eq 2
+  	expect(fizzbuzz(4)).to eq 4
+  end
   it 'if given multipled of 3 and 5 returns "fizzbuzz"'do
     expect(fizzbuzz(15)).to eq 'fizzbuzz'
     expect(fizzbuzz(30)).to eq 'fizzbuzz'
